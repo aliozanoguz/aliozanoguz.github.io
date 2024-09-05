@@ -3,45 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Development in Swift</title>
+    <title>Develop in Swift</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            background-color: beige;
             font-family: Arial, sans-serif;
-            background-color: #f5f5dc; /* Beige background color */
-            color: #333;
             text-align: center;
-            flex-direction: column;
         }
         h1 {
-            font-size: 50px;
             color: #333;
-            margin-bottom: 20px;
         }
-        nav a {
-            display: block;
-            margin: 10px 0;
-            text-decoration: none;
-            color: #0073e6;
-            font-size: 24px;
-            font-weight: bold;
+        .project-section {
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 1000px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .project-section h2 {
+            color: #555;
+        }
+        .project-section p {
+            color: #666;
+        }
+        .upload-container {
+            margin: 20px;
+            padding: 10px;
+        }
+        input[type="file"] {
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
-    <h1>Development in Swift</h1>
+    <h1>Develop in Swift</h1>
 
-    <nav>
-        <a href="#">Project 1</a>
-        <a href="#">Project 2</a>
-        <a href="#">Project 3</a>
-        <!-- Add more links as needed -->
-    </nav>
+    <!-- Project 1 -->
+    <div class="project-section">
+        <h2>Project 1: App Name</h2>
+        <img src="project1.jpg" alt="Project 1 Screenshot">
+        <p>Description of the project goes here. You can describe what the app does, the features you implemented, and any challenges you faced.</p>
+        <div class="upload-container">
+            <label for="upload1">Upload Screenshot:</label>
+            <input type="file" id="upload1" name="upload1">
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-section">
+        <h2>Project 2: App Name</h2>
+        <img src="project2.jpg" alt="Project 2 Screenshot">
+        <p>Description of the project goes here. Explain your approach, Swift techniques used, and any user feedback.</p>
+        <div class="upload-container">
+            <label for="upload2">Upload Screenshot:</label>
+            <input type="file" id="upload2" name="upload2">
+        </div>
+    </div>
+
+    <!-- Add more projects as needed -->
 
 </body>
 </html>
