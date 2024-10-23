@@ -3,28 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>My Projects</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f5f5dc; /* Beige background color */
+            background-color: beige;
+            text-align: center;
+        }
+        .projects-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        .project {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 30%;
+        }
+        .project h2 {
+            font-size: 24px;
+            margin: 15px 0;
+        }
+        .project p {
+            font-size: 16px;
             color: #333;
         }
-        h1 {
-            font-size: 50px;
-            text-align: center;
-            color: #333;
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .project a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
-    <h1>Coming Soon</h1>
+    <h1>My Projects</h1>
+    
+    <div class="projects-container">
+        <div class="project">
+            <h2>Project 1 Title</h2>
+            <p>Short description of Project 1 goes here.</p>
+            <a href="https://link-to-project1.com" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h2>Project 2 Title</h2>
+            <p>Short description of Project 2 goes here.</p>
+            <a href="https://link-to-project2.com" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h2>Project 3 Title</h2>
+            <p>Short description of Project 3 goes here.</p>
+            <a href="https://link-to-project3.com" target="_blank">View Project</a>
+        </div>
+    </div>
 
 </body>
 </html>
